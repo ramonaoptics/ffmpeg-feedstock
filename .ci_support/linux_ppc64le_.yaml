@@ -7,15 +7,15 @@ c_compiler_version:
 cdt_name:
 - cos7
 channel_sources:
-- conda-forge
+- ramonaoptics,conda-forge
 channel_targets:
-- conda-forge main
+- ramonaoptics main
 cxx_compiler:
 - gxx
 cxx_compiler_version:
 - '10'
 docker_image:
-- quay.io/condaforge/linux-anvil-cos7-x86_64
+- quay.io/condaforge/linux-anvil-ppc64le
 freetype:
 - '2'
 gmp:
@@ -35,10 +35,6 @@ pin_run_as_build:
     max_pin: x.x
 target_platform:
 - linux-ppc64le
-x264:
-- 1!161.*
-x265:
-- '3.5'
 zip_keys:
 - - c_compiler_version
   - cxx_compiler_version
