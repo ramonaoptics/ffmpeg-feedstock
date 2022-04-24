@@ -27,7 +27,6 @@ build:
   # https://abi-laboratory.pro/tracker/timeline/ffmpeg/
     - {{ pin_subpackage('ffmpeg', max_pin='x') }}
   skip: true  # [win]
-  skip: true  # [license_family=='gpl']
 
 requirements:
   build:
