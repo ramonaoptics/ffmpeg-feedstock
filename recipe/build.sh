@@ -44,13 +44,11 @@ fi
         --disable-openssl \
         --enable-demuxer=dash \
         --enable-gnutls \
-        --enable-gpl \
+        --disable-gpl \
         --enable-hardcoded-tables \
         --enable-libfreetype \
         --enable-libopenh264 \
         ${extra_args} \
-        --enable-libx264 \
-        --enable-libx265 \
         --enable-libaom \
         --enable-libsvtav1 \
         --enable-libxml2 \

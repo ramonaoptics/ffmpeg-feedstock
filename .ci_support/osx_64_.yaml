@@ -5,15 +5,15 @@ bzip2:
 c_compiler:
 - clang
 c_compiler_version:
-- '12'
+- '13'
 channel_sources:
-- conda-forge
+- ramonaoptics,conda-forge
 channel_targets:
-- conda-forge main
+- ramonaoptics main
 cxx_compiler:
 - clangxx
 cxx_compiler_version:
-- '12'
+- '13'
 freetype:
 - '2'
 gmp:
@@ -39,10 +39,6 @@ pin_run_as_build:
     max_pin: x.x
 target_platform:
 - osx-64
-x264:
-- 1!161.*
-x265:
-- '3.5'
 zip_keys:
 - - c_compiler_version
   - cxx_compiler_version
