@@ -16,6 +16,8 @@ source:
 {%- if license_family == 'gpl' %}
 {%- set number = number + 100 %}
 {%- endif %}
+# Give our build numbers an even higher precedence
+{%- set number = number + 200 %}
 
 build:
   number: {{ number }}
@@ -25,6 +27,7 @@ build:
   # https://abi-laboratory.pro/tracker/timeline/ffmpeg/
     - {{ pin_subpackage('ffmpeg', max_pin='x') }}
   skip: true  # [win]
+  skip: true  # [license_family=='gpl']
 
 requirements:
   build:
