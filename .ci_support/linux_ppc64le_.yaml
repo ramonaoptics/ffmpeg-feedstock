@@ -5,11 +5,11 @@ c_compiler:
 c_compiler_version:
 - '10'
 cdt_name:
-- cos6
+- cos7
 channel_sources:
-- conda-forge
+- ramonaoptics,conda-forge
 channel_targets:
-- conda-forge main
+- ramonaoptics main
 cxx_compiler:
 - gxx
 cxx_compiler_version:
@@ -25,7 +25,7 @@ gnutls:
 libxml2:
 - '2.9'
 license_family:
-- gpl
+- lgpl
 pin_run_as_build:
   bzip2:
     max_pin: x
@@ -40,7 +40,7 @@ pin_run_as_build:
 svt_av1:
 - 1.1.0
 target_platform:
-- linux-64
+- linux-ppc64le
 x264:
 - 1!161.*
 x265:
